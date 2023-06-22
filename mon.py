@@ -31,7 +31,7 @@ while True:
         raw_stats = list(map(lambda pair: float(pair[0])/float(pair[1]), ram_using))
     elif MODE == "util":
         util = re.findall(r'(\d*)%\W*Default', p)
-        raw_stats = list(map(lambda pair: float(pair[0])/100., util))
+        raw_stats = list(map(lambda stat: float(stat)/100., util))
     else:
         print("invalid mode")
         exit()
