@@ -5,7 +5,7 @@ import plotext as plt
 from datetime import datetime
 import argparse
 
-parser = argparse.ArgumentParser(description='Run an embedding process')
+parser = argparse.ArgumentParser(description='Monitor GPU stats')
 parser.add_argument('--num', default=100, type=int, help='number of samples to display')
 parser.add_argument('--util', default=False, action='store_true', help='display utilization rather than memory usage')
 parser.add_argument('--smipath', default='nvidia-smi', action='store_true', help='path to smi executable')
